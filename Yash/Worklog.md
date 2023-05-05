@@ -47,6 +47,25 @@ Consultation with dentist. We decided to settle on one material that has proven 
 
 Firstly, PMMA is considered safe to use because it doesn't react with the tissues in the mouth or cause any negative effects. This means it can be used without posing any risk to the patient's health. Additionally, PMMA is transparent, which allows for easy visualization of the underlying tissues and components. This is especially helpful when working in the oral cavity, where visibility can be limited.
 
+## 2/28
+The first coefficient that needs to be calculated is the voltage gain coefficient. This determines how much the input voltage is amplified by the circuit. It is calculated by dividing the output voltage by the input voltage.
+
+The second coefficient is the input impedance coefficient. This determines how much the circuit resists the flow of current from the input source. It is calculated by dividing the input voltage by the input current.
+
+The third coefficient is the output impedance coefficient. This determines how much the circuit resists the flow of current to the output load. It is calculated by dividing the output voltage by the output current.
+
+To calculate these coefficients, you need to use the relevant equations and plug in the values for the components in the circuit. Once you have calculated the coefficients, you can use them to determine the optimal values for the components to achieve the desired amplification gain.
+
+
+
+## 3/5
+Noticed that type A amplifier has some severe disadntaves, One major disadvantage of a basic type A amplifier is its low efficiency, as it operates in Class A mode all the time, even when there is no signal to amplify. This means that it draws a constant amount of power from the power supply, which results in a significant amount of wasted power and heat dissipation. As a result, the amplifier can become quite hot, and may require additional cooling to prevent damage.
+
+Another disadvantage of a basic type A amplifier is its limited output power capability, as it can only output as much power as the power supply can provide. This means that it may not be suitable for driving high-power loads or for applications that require high output power.
+
+Additionally, a basic type A amplifier can be sensitive to temperature variations, as changes in temperature can cause changes in the biasing of the output transistor, which can affect the amplifier's performance. This can lead to distortion and other issues.
+
+
 Another advantage of PMMA is that it is easy to work with. It can be shaped and molded into a variety of sizes and shapes, making it highly versatile for different dental and medical applications. This means it can be used to encase different types of electrical components, such as sensors, transducers, or even small motors.
 Finally, PMMA is relatively inexpensive compared to other materials used for similar purposes, which makes it a cost-effective solution for dental and medical practitioners.
 ## 3/11
@@ -57,4 +76,5 @@ The alginate was inserted into the impression tray, and I was instructed to plac
 
 The negative impression was then used to create a positive plaster cast of my upper palate. The cast was filled with dental stone, which hardened and formed an exact replica of my dental arches. This replica was then used to create a custom dental appliance or restoration, tailored specifically to my oral anatomy.
 This mold is then to be used to create a custom fit for the BCDC for each individauls mouth, all in all good progress.
+
 
