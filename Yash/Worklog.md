@@ -41,3 +41,14 @@ Built-in security features: The ESP32 includes a range of security features, inc
 
 Easy to program: The ESP32 can be programmed using the Arduino IDE or the ESP-IDF (ESP32 IoT Development Framework), making it easy to develop and deploy applications.
 Aurdino IDE makes it the perfect choice for us due to ease of progarmming.
+
+## 2/25
+Consultation with dentist. We choose to use the material PMMA beacuse PMMA, or polymethyl methacrylate, is a type of plastic that is commonly used in dental prosthetics and orthodontic appliances. It is also used in some cases to encase electrical components that are placed in the mouth, such as sensors or electrodes.
+
+One advantage of using PMMA for this purpose is its biocompatibility. PMMA is a biologically inert material, which means that it does not react with the tissues in the mouth and does not cause any harmful effects. This makes it a safe material to use for dental and medical applications.
+
+Another advantage of using PMMA is its transparency. PMMA is a clear and transparent material, which allows for easy visualization of the underlying components. This can be particularly useful when working with sensors or other devices that need to be positioned accurately.
+
+PMMA is also easy to work with and can be molded into a variety of shapes and sizes. This makes it a versatile material that can be used to create custom enclosures for specific devices or components.
+
+Finally, PMMA is a relatively inexpensive material, which makes it a cost-effective option for dental and medical applications.
