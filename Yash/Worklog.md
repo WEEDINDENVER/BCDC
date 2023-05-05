@@ -58,6 +58,16 @@ To calculate these coefficients, you need to use the relevant equations and plug
 
 
 
+## 3/1
+I realized that type A amplifiers are not actually so advantagoeous. 
+One major disadvantage of a basic type A amplifier is its low efficiency, as it operates in Class A mode all the time, even when there is no signal to amplify. This means that it draws a constant amount of power from the power supply, which results in a significant amount of wasted power and heat dissipation. As a result, the amplifier can become quite hot, and may require additional cooling to prevent damage.
+
+Another disadvantage of a basic type A amplifier is its limited output power capability, as it can only output as much power as the power supply can provide. This means that it may not be suitable for driving high-power loads or for applications that require high output power.
+
+Additionally, a basic type A amplifier can be sensitive to temperature variations, as changes in temperature can cause changes in the biasing of the output transistor, which can affect the amplifier's performance. This can lead to distortion and other issues.
+
+Overall, while a basic type A amplifier may be simple and easy to design, its low efficiency, limited output power, and sensitivity to temperature variations make it less suitable for many applications.
+
 ## 3/5
 Noticed that type A amplifier has some severe disadntaves, One major disadvantage of a basic type A amplifier is its low efficiency, as it operates in Class A mode all the time, even when there is no signal to amplify. This means that it draws a constant amount of power from the power supply, which results in a significant amount of wasted power and heat dissipation. As a result, the amplifier can become quite hot, and may require additional cooling to prevent damage.
 
@@ -68,6 +78,10 @@ Additionally, a basic type A amplifier can be sensitive to temperature variation
 
 Another advantage of PMMA is that it is easy to work with. It can be shaped and molded into a variety of sizes and shapes, making it highly versatile for different dental and medical applications. This means it can be used to encase different types of electrical components, such as sensors, transducers, or even small motors.
 Finally, PMMA is relatively inexpensive compared to other materials used for similar purposes, which makes it a cost-effective solution for dental and medical practitioners.
+
+## 3/7 
+Finished some of the circuit design.
+
 ## 3/11
 
 I recently underwent a dental impression procedure to obtain a mold of my upper palate. The dentist began by providing me with an impression tray containing a viscous, water-based substance called alginate. Alginate is a hydrocolloid material that is commonly used to create dental impressions due to its ability to quickly form a stable mold.
@@ -78,3 +92,67 @@ The negative impression was then used to create a positive plaster cast of my up
 This mold is then to be used to create a custom fit for the BCDC for each individauls mouth, all in all good progress.
 
 
+## 3/28
+Worked on the devkit to make sure the I could code the esp to connect to some local host to play some audio.
+First, I made sure that all of the necessary libraries were installed on my system, including the ESP32-Arduino Core and the audio.h library. The ESP32-Arduino Core provides the basic functionality required to work with the ESP32, while the audio.h library provides the necessary tools for working with audio data.
+
+Next, I started a new Arduino sketch and used the #include directive to include the required libraries. This directive tells the Arduino IDE to include the necessary files at the beginning of the sketch.
+
+To connect to my local host, I set up a Wi-Fi connection by providing my network's SSID and password. This allowed my ESP32 to connect to my Wi-Fi network and access the Internet.
+
+After that, I initialized the audio output by setting the sample rate, bit depth, and number of channels. The sample rate determines the number of samples per second that are played back, while the bit depth determines the resolution of the audio data. The number of channels determines whether the audio is mono or stereo. I also set up the buffer size for the audio data, which determines how much data is stored in memory before being played back.
+
+Next, I created a client object to connect to my local host using its IP address and port number. The IP address is a unique identifier assigned to each device on a network, while the port number determines which specific service or application is being accessed.
+
+Finally, I used a while loop to continuously read audio data from my local host and play it through the ESP32's audio output. Within the while loop, I used the client object to read data from my local host and store it in a buffer. Once the buffer was full, I played back the audio data using the audio.h library. This process continued indefinitely until the connection was closed or the sketch was stopped.
+
+## 4/4
+Today i worked on sending the audio data from the local host connction with audio.h to my transducer. Sufferened one issue where for some reason I could not program the boared with my own computer so had to use my partners computer.
+To go over the steps I did, 
+First, I made sure that I had the necessary libraries installed, including the ESP32-Arduino Core and the i2s.h library.
+Then, I started a new Arduino sketch and included the required libraries using the #include directive.
+Next, I initialized the I2S interface by setting the sample rate, the number of bits per sample, and the number of channels. I also specified the GPIO pins that would be used for the I2S interface.
+After that, I created a buffer to hold the audio data that would be sent to the I2S DAC.
+Finally, I used a while loop to continuously read audio data from a file or a sensor and write it to the I2S buffer, which would in turn send the data to the I2S DAC through the specified GPIO pins.
+By doing this, I was able to use the i2s.h library to connect the ESP32's GPIO pins to an I2S DAC and play audio through an external speaker or headphones.
+
+
+## 4/15
+Today I worked on the https post requests with Arya and sending data back from the esp32 to the computer. I used an ESP32 microcontroller to collect data from an analog sensor using the built-in ADC pins. I needed to send this data to a computer using an HTTP POST request.
+First, I made sure that I had the necessary libraries installed, including the ESP32-Arduino Core, and the ADC.h library.
+Next, I initialized the ADC by setting its resolution, sampling rate, and voltage range. Then, I configured the GPIO pins to be used as ADC input channels.
+After that, I created an HTTP client object to connect to the computer and send the data. I specified the server address, port number, and URL to which the data should be sent.
+Then, I started a loop to read the ADC value and send it using an HTTP POST request. I also included headers in the request to specify the content type and length of the data.
+Finally, I closed the HTTP client connection and waited for a certain amount of time before starting the loop again to collect and send more data.
+Unfortunately the data was noisey and useless because the adc on the esp32 is trash.
+
+## 4/23
+Worked on soldering the first breadboard as well as the ADC test but with very limited success unfortunately I was not able to bring either task to valdiity, the soldering was helped by kevin but even then soldiering wires to all of the chips outputs was simply too hard. It was a tough day but we will make progress I am 100% sure.
+
+## 4/24
+We kept finding more and more issues with the ESP unfortunately there were pins that were not soldered correctly but eventually we figured out there is a download sequence that must be followed. 
+We eventually read the internet and did the following,The ESP32 is powered on or reset, and it enters the bootloader mode. The bootloader is a small piece of software that is built into the ESP32's flash memory.
+
+The bootloader waits for a download request from the host computer, usually through a USB cable.
+
+The host computer sends a download request to the ESP32 bootloader using a tool such as esptool.py or the Arduino IDE.
+
+The ESP32 bootloader responds to the download request by sending an acknowledgement to the host computer.
+
+The host computer sends the new firmware or code to the ESP32 bootloader in binary format over the USB connection.
+
+The ESP32 bootloader receives the binary data and writes it to the ESP32's flash memory.
+
+Once the download is complete, the ESP32 bootloader verifies the firmware or code and resets the ESP32.
+
+The ESP32 starts running the new firmware or code from the beginning of the flash memory.
+We were able to succesfuly program the breadboard version of the ESP.
+
+## 4/25 Continue debugging
+So, we were working with an ESP32 microcontroller and we needed to regulate the voltage coming from my power supply to a stable 3.3 volts. We had decided to use a linear regulator to do this.
+At first, everything seemed to be working fine. But as we started to increase the load on the ESP32, we noticed that it was drawing more current than I had anticipated. This caused the voltage coming from the regulator to drop below 3.3 volts, which in turn caused the ESP32 to brown out.
+We realized that the linear regulator was not able to handle the current demands of the ESP32. This was because a linear regulator works by dissipating excess voltage as heat, and as the load on the regulator increased, so did the amount of heat it was producing. Eventually, the regulator became too hot and was unable to maintain a stable voltage output.
+What we did was short the regulator and we got succesful funtionality on the esp.
+
+## Afterwards to finish,
+Worked on the presentation, the demo and redied our tests for showing the viability of our product.
