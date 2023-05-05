@@ -43,12 +43,18 @@ Easy to program: The ESP32 can be programmed using the Arduino IDE or the ESP-ID
 Aurdino IDE makes it the perfect choice for us due to ease of progarmming.
 
 ## 2/25
-Consultation with dentist. We choose to use the material PMMA beacuse PMMA, or polymethyl methacrylate, is a type of plastic that is commonly used in dental prosthetics and orthodontic appliances. It is also used in some cases to encase electrical components that are placed in the mouth, such as sensors or electrodes.
+Consultation with dentist. We decided to settle on one material that has proven to be quite useful in electrical applications in the mouth which is PMMA, which stands for polymethyl methacrylate. PMMA is a type of plastic that has several advantages when it comes to dental and medical applications.
 
-One advantage of using PMMA for this purpose is its biocompatibility. PMMA is a biologically inert material, which means that it does not react with the tissues in the mouth and does not cause any harmful effects. This makes it a safe material to use for dental and medical applications.
+Firstly, PMMA is considered safe to use because it doesn't react with the tissues in the mouth or cause any negative effects. This means it can be used without posing any risk to the patient's health. Additionally, PMMA is transparent, which allows for easy visualization of the underlying tissues and components. This is especially helpful when working in the oral cavity, where visibility can be limited.
 
-Another advantage of using PMMA is its transparency. PMMA is a clear and transparent material, which allows for easy visualization of the underlying components. This can be particularly useful when working with sensors or other devices that need to be positioned accurately.
+Another advantage of PMMA is that it is easy to work with. It can be shaped and molded into a variety of sizes and shapes, making it highly versatile for different dental and medical applications. This means it can be used to encase different types of electrical components, such as sensors, transducers, or even small motors.
+Finally, PMMA is relatively inexpensive compared to other materials used for similar purposes, which makes it a cost-effective solution for dental and medical practitioners.
+## 3/11
 
-PMMA is also easy to work with and can be molded into a variety of shapes and sizes. This makes it a versatile material that can be used to create custom enclosures for specific devices or components.
+I recently underwent a dental impression procedure to obtain a mold of my upper palate. The dentist began by providing me with an impression tray containing a viscous, water-based substance called alginate. Alginate is a hydrocolloid material that is commonly used to create dental impressions due to its ability to quickly form a stable mold.
 
-Finally, PMMA is a relatively inexpensive material, which makes it a cost-effective option for dental and medical applications.
+The alginate was inserted into the impression tray, and I was instructed to place it into my mouth, making sure to bite down firmly on it. The alginate material flowed into the contours of my teeth and gums, forming a negative impression of my dental arches. The material was left to set for a few minutes until it had solidified, and the dentist carefully removed the tray from my mouth.
+
+The negative impression was then used to create a positive plaster cast of my upper palate. The cast was filled with dental stone, which hardened and formed an exact replica of my dental arches. This replica was then used to create a custom dental appliance or restoration, tailored specifically to my oral anatomy.
+This mold is then to be used to create a custom fit for the BCDC for each individauls mouth, all in all good progress.
+
